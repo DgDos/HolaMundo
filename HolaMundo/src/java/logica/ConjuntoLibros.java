@@ -68,9 +68,9 @@ public class ConjuntoLibros {
     
     @Override
     public String toString() {
-        String s="Libros: \n";
+        String s="Libros: <br/>";
         for(int i=0;i<cantidad;i++){
-            s+=""+libros[i].getTitulo()+", "+libros[i].getAutor()+", "+libros[i].getNumPag()+", "+libros[i].getCalificacion()+"\n";
+            s+=""+libros[i].getTitulo()+", "+libros[i].getAutor()+", "+libros[i].getNumPag()+", "+libros[i].getCalificacion()+"<br/>";
         }
         return s; //To change body of generated methods, choose Tools | Templates.
     }

@@ -35,16 +35,15 @@ public class HolaMundo extends HttpServlet {
         try (PrintWriter out = response.getWriter()) {
             
             
-            String clave1=request.getParameter("clave1");
-            String clave2=request.getParameter("clave2");
+            String titulo=request.getParameter("titulo");
+            String autor=request.getParameter("autor");
             ConjuntoLibros libros=new ConjuntoLibros();
             Libro l1=new Libro("Alice in Wonderland","Lewis Carroll | FreeBoo",320,8);
             libros.AñadirLibros(l1);
             l1=new Libro("El método Lean Startup","Eric Ries",700,7);
             libros.AñadirLibros(l1);
-            System.out.println(libros.toString());
-            libros.Mayor();
-            libros.Menor();
+            l1=new Libro(titulo,autor);
+            libros.AñadirLibros(l1);
             
             
             /* TODO output your page here. You may use following sample code. */
